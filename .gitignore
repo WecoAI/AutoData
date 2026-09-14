@@ -1,0 +1,30 @@
+# Local env + venv
+.env
+.venv/
+.venv-run/
+__pycache__/
+*.pyc
+
+# WECO state + run traces (per-machine)
+.runs/
+.weco_iteration_*
+weco/log/
+
+# Staging area for pipeline materialisation (huge, regenerable)
+/dev/shm/autodata_stage/
+
+# Training outputs + temporary build logs
+pipeline/*_handles.json
+pipeline/*_local.json
+pipeline/*_modal.json
+/results/
+/tmp/*.log
+
+# Editor / OS junk
+.DS_Store
+.idea/
+.vscode/
+*.swp
+rebuttal/
+generated_tables/
+.weco

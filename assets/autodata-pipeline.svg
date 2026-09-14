@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-labelledby="title desc">
+  <title id="title">The AutoData search loop</title>
+  <desc id="desc">An LLM writes a selector, AutoData selects documents and trains a proxy model, then returns the score to the LLM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#667085"/>
+    </marker>
+    <style>
+      .box { fill: #fff; stroke: #cfd4dc; stroke-width: 1.5; }
+      .line { fill: none; stroke: #667085; stroke-width: 1.6; marker-end: url(#arrow); }
+      .label { fill: #202124; font: 600 18px system-ui, sans-serif; text-anchor: middle; }
+      .detail { fill: #667085; font: 13px system-ui, sans-serif; text-anchor: middle; }
+      .feedback { fill: #667085; font: 12px system-ui, sans-serif; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="box" x="25" y="55" width="180" height="70" rx="8"/>
+  <text class="label" x="115" y="84">Write selector</text>
+  <text class="detail" x="115" y="107">LLM edits select_docs()</text>
+
+  <rect class="box" x="245" y="55" width="180" height="70" rx="8"/>
+  <text class="label" x="335" y="84">Select data</text>
+  <text class="detail" x="335" y="107">apply rule to pool</text>
+
+  <rect class="box" x="465" y="55" width="180" height="70" rx="8"/>
+  <text class="label" x="555" y="84">Train proxy</text>
+  <text class="detail" x="555" y="107">evaluate selected data</text>
+
+  <rect class="box" x="685" y="55" width="180" height="70" rx="8"/>
+  <text class="label" x="775" y="84">Return score</text>
+  <text class="detail" x="775" y="107">CORE or validation bpb</text>
+
+  <path class="line" d="M205 90 H245"/>
+  <path class="line" d="M425 90 H465"/>
+  <path class="line" d="M645 90 H685"/>
+  <path class="line" d="M775 125 V175 H115 V125"/>
+  <text class="feedback" x="445" y="199">feedback guides the next step · up to 200 steps</text>
+</svg>
