@@ -328,7 +328,7 @@ and the raw pool is
 [karpathy/climbmix-400b-shuffle](https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle).
 
 ## Citation 
-
+```bibtex
 @misc{autodataselection2026,
   title         = {{AutoData}: Agentic Search for Pre-training Data Selection},
   author        = {Yan Meng and Dhruv Srikanth and Bingchen Zhao and Zhengyao Jiang and Yuxiang Wu},
@@ -338,3 +338,4 @@ and the raw pool is
   primaryClass  = {cs.AI},
   url           = {https://arxiv.org/abs/2609.19754}
 }
+```
