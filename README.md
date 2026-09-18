@@ -326,3 +326,15 @@ in `search/launch/run.sh` before launching, as described in
 The training stack is [karpathy/nanochat](https://github.com/karpathy/nanochat),
 and the raw pool is
 [karpathy/climbmix-400b-shuffle](https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle).
+
+## Citation 
+
+@misc{autodataselection2026,
+  title         = {{AutoData}: Agentic Search for Pre-training Data Selection},
+  author        = {Yan Meng and Dhruv Srikanth and Bingchen Zhao and Zhengyao Jiang and Yuxiang Wu},
+  year          = {2026},
+  eprint        = {2609.19754},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2609.19754}
+}
